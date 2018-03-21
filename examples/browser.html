@@ -1,0 +1,29 @@
+<html>
+<head>
+  <title>Test</title>
+</head>
+<body>
+  <!-- importing the automatically build module -->
+  <script src="../dist/es6modulewp.js"></script>
+
+  <!-- The minified version is also accessible -->
+  <!-- <script src="../dist/es6module.umd.min.js"></script> -->
+
+  <p>Open Javascript console.</p>
+
+  <script>
+    console.log( 'hello' );
+
+
+    // the foo object is part of our es6module module
+    var foo = new es6modulewp.Foo(20, 30);
+
+    // do something with foo
+    foo.printAnAttribute();
+    foo.setAnAttribute(34)
+    foo.printAnAttribute();
+
+  </script>
+
+</body>
+</html>
